@@ -7,7 +7,7 @@ import RegisterModel from '../components/Models/RegisterModel';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <RegisterModel />
+      <RegisterModel />
       <LoginModel />
       <Layout>
         <Component {...pageProps} />
