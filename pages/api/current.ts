@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import serverAuth from "../../../libs/serverAuth";
+import serverAuth from "../../libs/serverAuth";
 
 export default async function handler(
   req: NextApiRequest,
@@ -15,6 +15,6 @@ export default async function handler(
     return res.status(200).json(currentUser);
   } catch (error) {
     console.log(error);
-    return res.status(400).end();
+    // return res.status(400).end(); BROKEN, KEEP DINGING CONSOLE LOG
   }
 }
