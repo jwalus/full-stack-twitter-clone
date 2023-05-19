@@ -1,12 +1,18 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Layout from '../components/Layout';
+import LoginModel from '../components/Models/LoginModel';
+import RegisterModel from '../components/Models/RegisterModel';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+    <RegisterModel />
+      <LoginModel />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   ) 
 }
 
