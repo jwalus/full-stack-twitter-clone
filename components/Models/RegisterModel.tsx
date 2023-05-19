@@ -35,7 +35,6 @@ const RegisterModel = () => {
     })
 
     toast.success('Account created.')
-
     signIn('credentials', {
       email, password
     });
