@@ -30,7 +30,7 @@ const RegisterModel = () => {
   try {
     setIsLoading(true);
 
-    await axios.post('/api/auth/register', {
+    await axios.post('/api/register', {
       email, password, username, name
     })
 
